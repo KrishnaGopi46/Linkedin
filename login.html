@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="css/style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+	<title>Linkedin</title>
+</head>
+<body>
+
+	<!--login form-->
+<section class="login-page active-page " id="login-page">
+	<div class="container">
+		<div class="row">
+			<div class="col1">
+				<img src="image/Linkedin.png" >
+				<h1>Welcome to your<br>professional community</h1>
+				<input type="text" placeholder="Enter your Phone Number" id="inp-name">
+				<input type="password" placeholder="Enter your Phone Password" id="inp-pass">
+				<div>
+					<button type="button" onclick="mySigninFunction()" id="btn1">Sign in</button><br>
+					<button type="button" onclick="showSingupPage()" id="btn2">Sign up</button>
+				</div>
+			</div>
+			<div class="col2">
+				<img src="image/main.svg">
+			</div>
+		</div>
+	</div>
+</section>
+
+	<!--signup form-->
+
+<section class="signup-page" id="signup-page">
+	<div class="container-signup">
+		<div class="row-signup">
+			<div class="col1-signup">
+				<img src="image/Linkedin.png" >
+				<h1>SIGN UP</h1>
+				<input type="text" placeholder="Enter your First Name" id="">
+				<input type="text" placeholder="Enter your Last Name">
+				<input type="text" placeholder="Enter your Phone Number">
+				<input type="email" placeholder="Enter your Email">
+				<input type="date" value="">
+				<div class="sex">
+					<label>GENDER</label>
+					<input type="radio">Male
+					<input type="radio">Female
+				</div>
+				<input type="password" placeholder="Enter Password">
+				<input type="password" placeholder="Enter Confirm Password">
+				<div>
+					<button type="button" onclick="myCreateFunction()">Create Account</button>
+				</div>
+			</div>
+			<div class="col2-signup">
+				<img src="image/main.svg">
+			</div>
+		</div>
+	</div>
+</section>
+
+	<!--welcom page-->
+
+<section class="main-page " id="main-page">
+
+	<div class="nav-bar">
+		<div class="main-img">
+			<img src="image/Linkedin.png" >
+		</div>
+		<button type="button" onclick="showLoginPage()">Logout</button>
+	</div>
+
+	<div class="content">
+		<div class="user">
+			<h1 id="user-detailes"></h1>
+		</div>
+		<div class="peoples">
+			<div id="people-detailes"></div>
+		</div>
+		
+	</div>
+
+</section>
+
+
+<script src="script.js"></script>
+</body>
+</html>
